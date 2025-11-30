@@ -4,7 +4,7 @@ const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 const { body, validationResult } = require('express-validator');
 var jwt = require('jsonwebtoken');
-const { exists, findOne } = require('../models/Notes');
+const { exists, findOne } = require('../models/Note');
 const fetchuser = require('../middleware/fetchuser');
 
 const JWT_SECRET = 'KashifSupermostSecretkey';
